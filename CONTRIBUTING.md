@@ -258,7 +258,6 @@ pre-commit run --all-files
 
 - **GitHub Discussions**: Ask questions and share ideas
 - **GitHub Issues**: Report bugs and request features  
-- **Email**: procreations@example.com for direct communication
 - **Documentation**: Check our comprehensive docs first
 
 ### Regular Communication
