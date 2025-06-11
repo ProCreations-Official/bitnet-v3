@@ -9,7 +9,7 @@ description = "BitNet v3: Ultra-Low Quality Loss 1-bit LLMs Through Multi-Stage 
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "ProCreations", email = "procreations@example.com"}
+    {name = "ProCreations"}
 ]
 keywords = [
     "bitnet", "quantization", "1-bit", "llm", "transformer",
