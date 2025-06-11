@@ -36,14 +36,14 @@ pip install bitnet-v3
 
 ### From Source
 ```bash
-git clone https://github.com/ProCreations/bitnet-v3.git
+git clone https://github.com/ProCreations-Official/bitnet-v3.git
 cd bitnet-v3
 pip install -e .
 ```
 
 ### Development Installation
 ```bash
-git clone https://github.com/ProCreations/bitnet-v3.git
+git clone https://github.com/ProCreations-Official/bitnet-v3.git
 cd bitnet-v3
 pip install -e ".[dev]"
 ```
