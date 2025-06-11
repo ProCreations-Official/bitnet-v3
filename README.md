@@ -434,13 +434,13 @@ Contributors will be:
 
 ## 📄 Citation
 
-If you use BitNet v3 in your research, please cite:
+If you use BitNet v3 in your research, please cite this repository:
 
 ```bibtex
-@article{bitnet_v3_2024,
+@software{bitnet_v3_2024,
   title={BitNet v3: Ultra-Low Quality Loss 1-bit LLMs Through Multi-Stage Progressive Quantization and Adaptive Hadamard Transform},
   author={ProCreations},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  url={https://github.com/ProCreations-Official/bitnet-v3},
   year={2024}
 }
 ```
