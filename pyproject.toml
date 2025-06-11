@@ -1,0 +1,166 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bitnet-v3"
+version = "1.0.0"
+description = "BitNet v3: Ultra-Low Quality Loss 1-bit LLMs Through Multi-Stage Progressive Quantization and Adaptive Hadamard Transform"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "ProCreations", email = "procreations@example.com"}
+]
+keywords = [
+    "bitnet", "quantization", "1-bit", "llm", "transformer",
+    "hadamard", "knowledge-distillation", "neural-networks",
+    "deep-learning", "pytorch"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research", 
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9", 
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "numpy>=1.21.0",
+    "scipy>=1.7.0",
+    "einops>=0.6.0",
+    "accelerate>=0.20.0",
+    "transformers>=4.30.0",
+    "datasets>=2.0.0",
+    "tokenizers>=0.13.0",
+    "tqdm>=4.60.0",
+    "pyyaml>=6.0",
+    "omegaconf>=2.3.0",
+    "wandb>=0.15.0",
+    "tensorboard>=2.13.0",
+    "bitsandbytes>=0.41.0",
+    "safetensors>=0.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "black>=21.0",
+    "isort>=5.0",
+    "flake8>=3.8",
+    "mypy>=0.800",
+    "pre-commit>=2.0",
+]
+docs = [
+    "sphinx>=4.0",
+    "sphinx-rtd-theme>=1.0",
+    "myst-parser>=0.15",
+]
+examples = [
+    "matplotlib>=3.3",
+    "seaborn>=0.11",
+    "tqdm>=4.60",
+    "datasets>=1.8",
+    "transformers>=4.20",
+]
+all = [
+    "flash-attn>=2.0.0",
+    "xformers>=0.0.20",
+]
+
+[project.urls]
+Homepage = "https://github.com/ProCreations/bitnet-v3"
+Documentation = "https://github.com/ProCreations/bitnet-v3/blob/main/README.md"
+Repository = "https://github.com/ProCreations/bitnet-v3"
+"Bug Tracker" = "https://github.com/ProCreations/bitnet-v3/issues"
+Changelog = "https://github.com/ProCreations/bitnet-v3/blob/main/CHANGELOG.md"
+
+[project.scripts]
+bitnet-v3-train = "bitnet_v3.cli:train_cli"
+bitnet-v3-infer = "bitnet_v3.cli:infer_cli"
+
+[tool.setuptools]
+packages = ["bitnet_v3"]
+
+[tool.setuptools.package-data]
+bitnet_v3 = ["configs/*.yaml", "configs/*.json"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+known_first_party = ["bitnet_v3"]
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "E501", "W503"]
+exclude = [".git", "__pycache__", "build", "dist", ".eggs"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --strict-markers --strict-config"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "unit: marks tests as unit tests",
+]
+
+[tool.coverage.run]
+source = ["bitnet_v3"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "setup.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]

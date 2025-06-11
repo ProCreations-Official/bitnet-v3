@@ -1,0 +1,3 @@
+[console_scripts]
+bitnet-v3-infer = bitnet_v3.cli:infer_cli
+bitnet-v3-train = bitnet_v3.cli:train_cli

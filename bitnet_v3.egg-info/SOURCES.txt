@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bitnet_v3/__init__.py
+bitnet_v3.egg-info/PKG-INFO
+bitnet_v3.egg-info/SOURCES.txt
+bitnet_v3.egg-info/dependency_links.txt
+bitnet_v3.egg-info/entry_points.txt
+bitnet_v3.egg-info/not-zip-safe
+bitnet_v3.egg-info/requires.txt
+bitnet_v3.egg-info/top_level.txt
+tests/test_integration.py

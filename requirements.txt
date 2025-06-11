@@ -1,0 +1,38 @@
+# Core dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.21.0
+scipy>=1.7.0
+
+# Math and scientific computing
+einops>=0.6.0
+fast-hadamard-transform>=1.0.0
+
+# Training and optimization
+accelerate>=0.20.0
+transformers>=4.30.0
+datasets>=2.0.0
+tokenizers>=0.13.0
+
+# Utilities
+tqdm>=4.60.0
+pyyaml>=6.0
+omegaconf>=2.3.0
+wandb>=0.15.0
+tensorboard>=2.13.0
+
+# Numerical stability and precision
+bitsandbytes>=0.41.0
+safetensors>=0.3.0
+
+# Optional: For advanced features
+flash-attn>=2.0.0; platform_machine != "arm64"
+xformers>=0.0.20; platform_machine != "arm64"
+
+# Development and testing (optional, see setup.py dev extras)
+# pytest>=6.0
+# pytest-cov>=2.0
+# black>=21.0
+# isort>=5.0
+# flake8>=3.8
+# mypy>=0.800
