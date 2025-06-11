@@ -20,6 +20,13 @@ BitNet v3 introduces **five key innovations** for ultra-low quality loss 1-bit L
 
 This implementation provides the framework for training 1-bit LLMs with the potential for significant quality improvements over existing methods. **Performance evaluation is ongoing** - we're actively seeking contributors to help with testing, benchmarking, and validation across different model sizes and datasets.
 
+---
+
+> **🚨 CONTRIBUTORS WANTED!** 🚨  
+> **Help us validate BitNet v3!** We need researchers and engineers to test performance, optimize code, and validate results. All skill levels welcome - from bug reports to research contributions. [Jump to Contributing section](#-contributing---we-need-your-help) or [start a discussion](https://github.com/ProCreations-Official/bitnet-v3/discussions)!
+
+---
+
 ## 🛠️ Installation
 
 ### From PyPI (Recommended)
