@@ -61,8 +61,7 @@ from .models.transformer import BitNetV3Transformer
 __all__ = [
     # Version info
     "__version__",
-    "__author__", 
-    "__email__",
+    "__author__",
     
     # Core functions
     "quantize_weights_158",
