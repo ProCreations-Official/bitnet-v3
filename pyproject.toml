@@ -78,11 +78,11 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/ProCreations/bitnet-v3"
-Documentation = "https://github.com/ProCreations/bitnet-v3/blob/main/README.md"
-Repository = "https://github.com/ProCreations/bitnet-v3"
-"Bug Tracker" = "https://github.com/ProCreations/bitnet-v3/issues"
-Changelog = "https://github.com/ProCreations/bitnet-v3/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/ProCreations-Official/bitnet-v3"
+Documentation = "https://github.com/ProCreations-Official/bitnet-v3/blob/main/README.md"
+Repository = "https://github.com/ProCreations-Official/bitnet-v3"
+"Bug Tracker" = "https://github.com/ProCreations-Official/bitnet-v3/issues"
+Changelog = "https://github.com/ProCreations-Official/bitnet-v3/blob/main/CHANGELOG.md"
 
 [project.scripts]
 bitnet-v3-train = "bitnet_v3.cli:train_cli"
