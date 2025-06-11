@@ -17,7 +17,6 @@ Usage:
 
 __version__ = "1.0.0"
 __author__ = "ProCreations"
-__email__ = "procreations@example.com"
 
 # Core imports
 from .core.quantization import (
