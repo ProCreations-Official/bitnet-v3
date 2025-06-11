@@ -329,21 +329,23 @@ Built-in evaluation tools for comprehensive analysis:
 # Compute perplexity
 ppl = bitnet_v3.compute_perplexity(model, test_loader)
 
-# Efficiency metrics
+# Efficiency metrics (theoretical analysis)
 metrics = bitnet_v3.compute_efficiency_metrics(
     bitnet_model, 
     baseline_model,
     test_input,
 )
-print(f"Speedup: {metrics['speedup']:.1f}x")
-print(f"Memory reduction: {metrics['memory_reduction']:.1f}%")
+print(f"Expected speedup: {metrics['speedup']:.1f}x")
+print(f"Expected memory reduction: {metrics['memory_reduction']:.1f}%")
 
-# Downstream task evaluation
+# Downstream task evaluation framework
 results = bitnet_v3.evaluate_downstream_tasks(
     model,
     tasks=["hellaswag", "mmlu", "truthfulqa"],
 )
 ```
+
+**Note**: Performance validation is ongoing. We encourage the community to help benchmark BitNet v3 across different tasks and model sizes.
 
 ## 🛡️ Testing
 
