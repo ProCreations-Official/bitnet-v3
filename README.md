@@ -456,9 +456,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/ProCreations/bitnet-v3/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/ProCreations/bitnet-v3/discussions)
-- 📧 **Email**: procreations@example.com
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/ProCreations-Official/bitnet-v3/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/ProCreations-Official/bitnet-v3/discussions)
 
 ---
 
