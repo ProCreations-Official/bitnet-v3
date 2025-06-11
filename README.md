@@ -428,7 +428,6 @@ Contributors will be:
 
 - 💬 **Start a Discussion**: [GitHub Discussions](https://github.com/ProCreations-Official/bitnet-v3/discussions) for questions and ideas
 - 🐛 **Report Issues**: [GitHub Issues](https://github.com/ProCreations-Official/bitnet-v3/issues) for bugs and feature requests
-- 📧 **Direct Contact**: procreations@example.com for collaboration inquiries
 
 **Every contribution matters** - from fixing a typo to implementing a new feature. Join us in making 1-bit LLMs a reality! 🚀
 
