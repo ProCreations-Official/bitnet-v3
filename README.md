@@ -8,7 +8,7 @@ A comprehensive PyTorch implementation of **BitNet v3**, a novel framework for t
 
 ## 🚀 Key Features
 
-BitNet v3 introduces **five key innovations** that reduce quality degradation to just **0.3%** while maintaining **4.5x speedup** and **85% memory reduction**:
+BitNet v3 introduces **five key innovations** for ultra-low quality loss 1-bit LLMs:
 
 1. **🔄 Multi-stage Progressive Quantization (MPQ)** - Gradually reduces bit-width during training
 2. **🧮 Adaptive Hadamard Transform with Learnable Parameters (AHT-LP)** - Dynamically adjusts to activation distributions
@@ -16,15 +16,9 @@ BitNet v3 introduces **five key innovations** that reduce quality degradation to
 4. **⚖️ Dynamic Regularization with Quantization-Aware Penalties (DR-QAP)** - Stabilizes training with adaptive penalties
 5. **💫 Enhanced Straight-Through Estimator with Momentum (ESTE-M)** - Improves gradient approximation
 
-## 📊 Performance Results
+## 🔬 Research Status
 
-| Model Size | Method | Perplexity | Quality Loss | Speedup | Memory |
-|------------|--------|------------|--------------|---------|--------|
-| 1.3B | BitNet v3 | **14.58** | **+0.4%** | **4.5x** | **15%** |
-| 3B | BitNet v3 | **11.87** | **+0.3%** | **4.5x** | **15%** |
-| 7B | BitNet v3 | **9.45** | **+0.3%** | **4.5x** | **15%** |
-
-*Compared to full-precision FP16 models*
+This implementation provides the framework for training 1-bit LLMs with the potential for significant quality improvements over existing methods. **Performance evaluation is ongoing** - we're actively seeking contributors to help with testing, benchmarking, and validation across different model sizes and datasets.
 
 ## 🛠️ Installation
 
