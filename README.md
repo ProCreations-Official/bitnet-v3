@@ -396,7 +396,7 @@ pytest --cov=bitnet_v3 tests/
 
 ```bash
 # Fork the repository on GitHub first!
-git clone https://github.com/YOUR_USERNAME/bitnet-v3.git
+git clone https://github.com/ProCreations-Official/bitnet-v3.git
 cd bitnet-v3
 
 # Install in development mode
